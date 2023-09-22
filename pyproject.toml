@@ -1,5 +1,6 @@
 [tool.poetry]
 name = "test-tcie"
+description = "Test Runs"
 version = "3.0.0"
 
 authors = [
