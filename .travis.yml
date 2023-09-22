@@ -1,8 +1,17 @@
+---
 os: linux
 dist: focal
+arch: amd64
 language: python
-python: 3.11.2
+python:
+  - 3.11.2
 
-install: skip
+env:
+  global:
+    POETRY_VERSION: 1.6.1
+    POETRY_OPTS: "--no-ansi --no-interaction --no-plugins"
+
+install:
+  - make setup
 
 script: true
