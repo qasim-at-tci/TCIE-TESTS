@@ -1,0 +1,12 @@
+[project]
+name = "test-tcie"
+version = "3.0.0"
+requires-python = ">=3.11"
+
+authors = [
+  {name = "Qasim Abdullah", email = "qasim.abdullah@travis-ci.org" }
+]
+
+dependencies = [
+  "peppercorn"
+]
