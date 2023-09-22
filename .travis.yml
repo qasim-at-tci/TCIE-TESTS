@@ -1,0 +1,8 @@
+os: linux
+dist: focal
+language: python
+python: 3.11.2
+
+install: skip
+
+script: true
