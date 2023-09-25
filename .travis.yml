@@ -11,7 +11,9 @@ env:
     POETRY_VERSION: 1.6.1
     POETRY_OPTS: "--no-ansi --no-interaction --no-plugins"
 
+before_install: virtualenv --version
 install:
   - make setup
 
-script: true
+script:
+  - virtualenv --version
