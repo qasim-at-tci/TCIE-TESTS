@@ -13,6 +13,7 @@ env:
 
 before_install:
   - virtualenv --version
+  - ~/virtualenv/python3.11.2/bin/deactivate
   - cat /home/travis/virtualenv/python3.11.2/lib/python3.11/site-packages/virtualenv/create/describe.py
   - sudo apt install python2.7
 install:
@@ -21,3 +22,4 @@ install:
 script:
   - virtualenv --version
   - cat /home/travis/virtualenv/python3.11.2/lib/python3.11/site-packages/virtualenv/create/describe.py
+  - ls
