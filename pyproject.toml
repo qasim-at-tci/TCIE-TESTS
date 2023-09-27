@@ -10,6 +10,7 @@ authors = [
 [tool.poetry.dependencies]
 python = ">=3.11"
 aiohttp = "^3.8.1"
+virtualenv = "20.16.6"
 
 types-pyyaml = "6.0.12.11" # ISSUES?
 
