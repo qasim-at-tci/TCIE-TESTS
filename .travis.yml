@@ -21,8 +21,6 @@ jobs:
     - language: groovy
       jdk: openjdk11
     - language: haskell
-      ghc:
-        - "8.4.1"
     - language: java
       jdk: openjdk11
     - language: jvm
