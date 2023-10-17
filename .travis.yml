@@ -8,11 +8,10 @@ script: true
 
 jobs:
   include:
-    - language: minimal
     - language: shell
     - language: clojure
     - language: elixir
-      elixir: "1.5"
+      elixir: "1.15"
     - language: erlang
       otp_release:
         - "26.1"
@@ -21,16 +20,15 @@ jobs:
     - language: groovy
       jdk: openjdk11
     - language: haskell
+      ghc: "9.8.1"
     - language: java
-      jdk: openjdk11
-    - language: jvm
       jdk: openjdk11
     - language: node_js
       node_js: "18"
     - language: perl
       perl: "5.26"
     - language: php
-      PHP: "8.2.9"
+      php: "8.2.9"
     - language: python
       python: "3.10"
     - language: ruby
