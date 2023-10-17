@@ -2,22 +2,40 @@
 os: linux
 dist: focal
 arch: amd64
-language: python
-python:
-  - 3.11.2
 
-env:
-  global:
-    POETRY_VERSION: 1.6.1
-    POETRY_OPTS: "--no-ansi --no-interaction --no-plugins"
+install: skip
+script: true
 
-before_install:
-  - virtualenv --version
-  - cat /home/travis/virtualenv/python3.11.2/lib/python3.11/site-packages/virtualenv/create/describe.py
-install:
-  - make setup
-
-script:
-  - virtualenv --version
-  - cat /home/travis/virtualenv/python3.11.2/lib/python3.11/site-packages/virtualenv/create/describe.py
-  - ls -la
+jobs:
+  include:
+    - language: minimal
+    - language: shell
+    - language: clojure
+    - language: elixir
+      elixir: "1.5"
+    - language: erlang
+      otp_release:
+        - "26.1"
+    - language: go
+      go: "1.20"
+    - language: groovy
+      jdk: openjdk11
+    - language: haskell
+      ghc:
+        - "8.4.1"
+    - language: java
+      jdk: openjdk11
+    - language: jvm
+      jdk: openjdk11
+    - language: node_js
+      node_js: "18"
+    - language: perl
+      perl: "5.26"
+    - language: php
+      PHP: "8.2.9"
+    - language: python
+      python: "3.10"
+    - language: ruby
+      ruby: "3.2.2"
+    - language: scala
+      scala: "3.0.2"
