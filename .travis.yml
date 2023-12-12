@@ -105,4 +105,3 @@ jobs:
       script:
         - ./scripts/Travis/pushToArtifactory.sh
         - ./scripts/Travis/pushToPerforce.sh
-###
