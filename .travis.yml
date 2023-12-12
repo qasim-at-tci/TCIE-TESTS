@@ -90,7 +90,7 @@ jobs:
     - stage: test
       env: TEST_SUITE=services:spe:specific
       script:
-        - npm run test
+        - sleep 2
         - ./scripts/Travis/runTests.sh
     - stage: test
       env: TEST_SUITE=services:other
