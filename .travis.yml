@@ -103,5 +103,6 @@ jobs:
       env:
         - P4BRANCHES='main'
       script:
-        - bash -x scripts/Travis/pushToArtifactory.sh
-        - bash -x scripts/Travis/pushToPerforce.sh
+        - ./scripts/Travis/pushToArtifactory.sh
+        - ./scripts/Travis/pushToPerforce.sh
+###
