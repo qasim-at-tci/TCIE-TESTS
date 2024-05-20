@@ -1,5 +1,7 @@
-language: shell
+language: ruby
 os: linux
 dist: focal
 install: skip
-script: sleep 1
+script:
+  - ruby -v
+  - sudo docker run hello-world
