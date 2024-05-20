@@ -5,5 +5,3 @@ install: skip
 script:
   - ruby -v
   - sudo docker version
-  - docker version | true
-  - docker run hello-world
