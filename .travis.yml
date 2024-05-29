@@ -4,4 +4,6 @@ dist: focal
 install: skip
 script:
   - ruby -v
-  - sudo docker version
+  - rvm list
+  - rvm use 3.3.1
+  - ruby -v
