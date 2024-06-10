@@ -4,3 +4,4 @@ dist: focal
 install: skip
 script:
   - java -version
+  - sleep 10
