@@ -1,7 +1,6 @@
-language: ruby
-ruby: 3.2.4
+language: java
 os: linux
 dist: focal
 install: skip
 script:
-  - ruby -v
+  - java -version
